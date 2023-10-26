@@ -2,7 +2,8 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-    
+    <script src="jquery-3.7.1.min.js"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
@@ -21,6 +22,14 @@
             throwOnError : false
             });
         });
+
+        // https://stackoverflow.com/questions/14524297/how-to-scroll-to-div-after-click-on-about-or-contact-in-my-menu
+        $('.nav-link').find('a').click(function(){
+            var $href = $(this).attr('href');
+            var $anchor = $('#'+$href).offset();
+            $('body').animate({ scrollTop: $anchor.top });
+            return false;
+        });
     </script>
 
 </head>
@@ -37,10 +46,10 @@
                         I am a fifth year PhD candidate at MIT working under Wei Zhang. I am applying to jobs this year. I work in number theory, specifically in [....]
                     </p>
                     <div class="divider"></div>
-                    <a href="/" class="nav-link w-nav-link w--current" style="max-width: 940px;">
+                    <a href="#research" class="nav-link w-nav-link w--current" style="max-width: 940px;">
                         Research
                     </a>
-                    <a href="/teaching.html" class="nav-link w-nav-link" style="max-width: 940px;">
+                    <a href="#teaching" class="nav-link w-nav-link" style="max-width: 940px;">
                         Teaching
                     </a>
                     <a href="/CV.pdf" class="nav-link w-nav-link" style="max-width: 940px;">
@@ -52,7 +61,7 @@
         </div>
     </div>
 
-    <div class="content">
+    <div class="content" id="research">
         <div class="blog-list w-dyn-list">
             <div role="list" class="w-dyn-items">
                 <div role="listitem" class="w-dyn-item">
@@ -108,7 +117,25 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="content" style="padding-top:10px !important;" id="teaching">
+        <div class="w-container">
+            <h1>Teaching</h1>
+                <ul>
+                    <li>Reading with HS kids</li>
+                    <li>Teaching at Brazil MO</li>
+                    <li>???</li>
+                </ul>
+            <h1>Mentorship</h1>
+            <p>
+                <ul>
+                    <li>Reading with HS kids</li>
+                    <li>Teaching at Brazil MO</li>
+                    <li>???</li>
+                </ul>
+            </p>
+        </div>
     </div>
 </body>
 </html>

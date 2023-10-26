@@ -142,8 +142,10 @@ div {
 .content {
     width: 75%;
     margin-left: 25%;
-    padding: 50px;
-    /* background-color:red; */
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    /* background-color: red; */
     /* z-index:1000000; */
 }
 
