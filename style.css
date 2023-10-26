@@ -232,3 +232,5 @@ div {
     cursor: pointer;
     /* border-radius: 0; */
 }
+
+.katex { font-size: 1em !important; }
