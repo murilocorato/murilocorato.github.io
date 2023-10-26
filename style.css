@@ -16,6 +16,15 @@ h1 {
     font-weight: 600;
 }
 
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
 p {
     margin-top: 0px;
     margin-bottom: 20px;
@@ -38,6 +47,8 @@ div {
     padding: 50px 40px;
     background-color: #333;
     color: #9b9b9b;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
 }
 
 .navigation-bar {
@@ -148,6 +159,8 @@ div {
     padding-top: 50px;
     /* background-color: red; */
     /* z-index:1000000; */
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
 }
 
 .blog-list {
@@ -238,6 +251,14 @@ div {
 
 .katex { font-size: 1em !important; }
 
+.small-screen-display {
+    display: none;
+    /* height: 0; */
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+
 
 @media screen and (max-width: 767px) {
     h1 {
@@ -247,4 +268,24 @@ div {
     .navigation-menu {
         margin-top: 20px;
     }
+
+    .sidebar-column {
+        width: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .sidebar-column * {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .small-screen-display {
+        display: block;
+    }
+    
 }
