@@ -33,6 +33,7 @@ p {
 }
 
 a.post-info, p a {
+    color: #969696;
     text-decoration: none;
     font-weight: 600;
     padding: 0px 5px;
