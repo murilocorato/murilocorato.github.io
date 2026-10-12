@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+            // customised options
+            // • auto-render specific keys, e.g.:
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\(', right: '\\)', display: false},
+                {left: '\\[', right: '\\]', display: true}
+            ],
+            // • rendering keys, e.g.:
+            throwOnError : false
+            });
+        });
+
+        // https://stackoverflow.com/questions/14524297/how-to-scroll-to-div-after-click-on-about-or-contact-in-my-menu
+        $('.nav-link').find('a').click(function(){
+            var $href = $(this).attr('href');
+            var $anchor = $('#'+$href).offset();
+            $('body').animate({ scrollTop: $anchor.top });
+            return false;
+        });
+    </script>
+
+</head>
+<body>
+    <div class="sidebar-column">
+        <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" role="banner" class="navigation-bar w-nav">
+            <div class="w-container">
+                <a href="index.html" class="logo-link">
+                    <h1 class="logo-text w-nav-brand">Murilo Corato Zanarella</h1>
+                </a>
+                <nav role="navigation" class="navigation-menu w-nav-menu">
+                    <!-- figure out why the navigation-menu div is starting above the name -->
+                    <p class="main-subheading">
+                        I am a J. J. Sylvester Assistant Professor at Johns Hopkins. I am interested in arithmetic aspects of the (relative) Langlands program, particularly in the role of Shimura varieties, and applications to the Beilinson--Bloch--Kato conjectures, Euler systems and Iwasawa theory. I am currently on the job market!
+                    </p>
+                    <div class="divider"></div>
+                    <a href="index.html#research" class="nav-link w-nav-link" style="max-width: 940px;">
+                        Research
+                    </a>
+                    <a href="index.html#teaching" class="nav-link w-nav-link" style="max-width: 940px;">
+                        Teaching
+                    </a>
+                    <a href="index.html#talks" class="nav-link w-nav-link" style="max-width: 940px;">
+                        Talks
+                    </a>
+		    <!--
+                    <a href="index.html#notes" class="nav-link w-nav-link" style="max-width: 940px;">
+                        Notes
+                    </a>
+		    -->
+                    <a href="pdfs/CV.pdf" class="nav-link w-nav-link" style="max-width: 940px;">
+                        CV  
+                    </a>
+		    <a href="pet.html" class="nav-link w-nav-link w--current" style="max-width: 940px;">
+		      Pet
+		    </a>
+                    <div class="divider"></div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="content small-screen-display">
+        <h1>Murilo Corato Zanarella</h1>
+        <p>I am a J. J. Sylvester Assistant Professor at Johns Hopkins. I am interested in arithmetic aspects of the (relative) Langlands program, particularly in the role of Shimura varieties, and applications to the Beilinson--Bloch--Kato conjectures, Euler systems and Iwasawa theory. I am currently on the job market!</p>
+    </div>
+    <div class="content">
+    <div class="blog-list">
+        <h1>Trico</h1>
+
+        <p>
+          Trico is a Green Cheek Conure who loves going for walks and hikes.
+        </p>
+
+        <div class="pet-gallery">
+	  <figure class="pet-photo">
+	    <img src="images/trico-sleeping.jpg"
+		 alt="">
+	    <figcaption></figcaption>
+	  </figure>
+	  <figure class="pet-photo">
+	    <img src="images/trico-sleeping2.jpg"
+		 alt=""
+		 style="object-position: center 20%;">
+	    <figcaption></figcaption>
+	  </figure>
+	  <figure class="pet-photo">
+	    <img src="images/trico-cuddle.jpg"
+		 alt="">
+	    <figcaption></figcaption>
+	  </figure>
+	  <figure class="pet-photo">
+	    <img src="images/trico-toy.jpg"
+		 alt="">
+	    <figcaption></figcaption>
+	  </figure>
+	  <figure class="pet-photo">
+	    <img src="images/trico-ring.jpg"
+		 alt="">
+	    <figcaption></figcaption>
+	  </figure>
+	  <figure class="pet-photo">
+	    <img src="images/trico-string.jpg"
+		 alt=""
+		 style="object-position: center 40%;">
+	    <figcaption></figcaption>
+	  </figure>
+	  <figure class="pet-photo">
+	    <img src="images/trico-preening.jpg"
+		 alt=""
+		 style="object-position: center 20%;">
+	    <figcaption></figcaption>
+	  </figure>
+	  <figure class="pet-photo">
+	    <img src="images/trico-dog.jpg"
+		 alt="">
+	    <figcaption></figcaption>
+	  </figure>
+	  <figure class="pet-photo">
+	    <img src="images/trico-park.jpg"
+		 alt="">
+	    <figcaption></figcaption>
+	  </figure>
+	  <figure class="pet-photo">
+	    <img src="images/trico-hike1.jpg"
+		 alt="">
+	    <figcaption></figcaption>
+	  </figure>
+	  <figure class="pet-photo">
+	    <img src="images/trico-hike2.jpg"
+		 alt="">
+	    <figcaption></figcaption>
+	  </figure>
+	  <figure class="pet-photo">
+	    <img src="images/trico-hike3.jpg"
+		 alt="">
+	    <figcaption></figcaption>
+	  </figure>
+        </div>
+        <div class="pet-gallery">
+	  <figure class="pet-photo">
+	    <img src="images/trico-garden.jpg"
+		 alt="">
+	    <figcaption></figcaption>
+	  </figure>
+	  <figure class="pet-photo">
+	    <img src="images/trico-arboretum.jpg"
+		 alt="">
+	    <figcaption></figcaption>
+	  </figure>
+        </div>
+    </div>
+</div>
+<script>
+    document.querySelectorAll(".pet-gallery img").forEach(function (image) {
+        // Skip images that already have a link around them.
+        if (image.closest("a")) {
+            return;
+        }
+
+        const link = document.createElement("a");
+
+        // Use the same image path as the image itself.
+        link.href = image.getAttribute("src");
+        link.target = "_blank";
+        link.rel = "noopener";
+
+        // Put the link where the image was, then move the image into it.
+        image.parentNode.insertBefore(link, image);
+        link.appendChild(image);
+    });
+</script>
+</body>
+</html>
